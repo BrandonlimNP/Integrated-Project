@@ -1,2 +1,6 @@
-# Integrated-Project
-Integrated Project Immersive Media 2022
+# Evo Tech
+This project is about developing an Ecommerce website that sells mainly monitors and pc related accessories.
+
+# Features
+
+# Technologies
