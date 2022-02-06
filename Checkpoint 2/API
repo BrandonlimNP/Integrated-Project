@@ -1,0 +1,37 @@
+API
+Events
+Spin2WinWheel.onResult() - Returns Object. This can be set on the instance or passed in the init object. Returns the following:
+
+target - Spin2WinWheel - instance of the wheel
+spinCount - Integer - the current spin count for that result
+msg - String - the result text (this is resultText in the JSON)
+type - String - will return 'result'
+win - Boolean - will return true or false (based on the resultText in the JSON)
+gameId - String - the gameId (this is set in the JSON)
+userData - Object - an optional object that can contain your own specific data for each segment (this is set in the JSON)
+Spin2WinWheel.onError() - Returns Object. This can be set on the instance or passed in the init object. Returns the following:
+
+target - Spin2WinWheel - instance of the wheel
+spinCount - Integer - the current spin count for that error. Remember this is zero-based.
+msg - String - the error text (this is invalidSpinText in the JSON)
+type - String - will return 'error'
+win - String - will return 'null'
+gameId - String - the gameId (this is set in the JSON)
+Spin2WinWheel.onGameEnd() - Returns Object containing the target (instance of Spin2WinWheel), gameId and an array of result objects (object will be either result or error objects as above). This can be set on the instance or passed in the init object. Returns the following:
+
+target - Spin2WinWheel - instance of the wheel
+results - Object - an array of result objects.
+gameId - String - the gameId (this is set in the JSON)
+Static Functions
+Spin2WinWheel.reset() - Static function - resets the wheel.
+
+Calls
+Spin2WinWheel.init(vars:Object) - Function - initialises the wheel instance. See example under Usage. Accepts the following:
+
+onResult - pass in your own Result function. Called after every spin.
+onGameEnd - pass in your own Game End function. Called at the end of the game (unless there is no limit on number of spins).
+onError - pass in your own Error function.
+spinTrigger - pass in your own HTML button or trigger element to trigger the spin. The variable clickToSpin must be true in the JSON.
+Spin2WinWheel.restart() - Function - call this to reset the wheel based on the current JSON data
+
+Spin2WinWheel.getGameProgress() - Returns array of result objects - call this to view the results of the current game during play.
