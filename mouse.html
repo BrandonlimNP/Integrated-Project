@@ -93,7 +93,7 @@
             <a
               class="nav-link"
               data-bs-toggle="modal"
-              data-bs-target="#modalLoginForm"
+              data-bs-target="#modalLogin"
               id="login-text"
               >Login</a
             >
@@ -107,5 +107,79 @@
         </div>
       </div>
     </nav>
+    <!--LoginModal-->
+    <div
+      class="modal fade"
+      id="modalLogin"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="myModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content rounded-5 shadow">
+          <div class="modal-header p-5 pb-4 border-bottom-0">
+            <h4 class="modal-title w-100 font-weight-bold">Login</h4>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+    
+          <div class="modal-body p-5 pt-0">
+            <form class="">
+              <div class="form-floating mb-3">
+                <input type="email" class="form-control rounded-4" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput">Email address</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="password" class="form-control rounded-4" id="floatingPassword" placeholder="Password">
+                <label for="floatingPassword">Password</label>
+              </div>
+              <div class="button-group">
+              <button class="mb-2 btn btn-lg rounded-4 btn-primary" type="submit">Login</button>
+          
+              
+                <a data-bs-toggle="modal" data-bs-target="#modalSignUp" id="SideButton">
+                  &nbsp;&nbsp;Sign Up
+                </a>
+        
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--SignUpModal-->
+    <div class="modal fade" id="modalSignUp" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content rounded-5 shadow">
+      <div class="modal-header p-5 pb-4 border-bottom-0">
+        <h4 class="modal-title w-100 font-weight-bold">Sign Up</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <div class="modal-body p-5 pt-0">
+        <form class="">
+          <div class="form-floating mb-3">
+            <input type="email" class="form-control rounded-4" id="floatingInput" placeholder="name@example.com">
+            <label for="floatingInput">Email address</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="password" class="form-control rounded-4" id="floatingPassword" placeholder="Password">
+            <label for="floatingPassword">Password</label>
+          </div>
+          <div class="button-group">
+          <button class="mb-2 btn btn-lg rounded-4 btn-primary" type="submit">Sign Up</button>
+      
+          
+            <a data-bs-toggle="modal" data-bs-target="#modalLogin" id="SideButton">
+              &nbsp;&nbsp;Login
+            </a>
+    
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
   </body>
 </html>
