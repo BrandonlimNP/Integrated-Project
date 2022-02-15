@@ -1,0 +1,13 @@
+/*Nav bar*/
+.nav-active {
+    color: #0071C5;
+}
+
+.nav-bag-mobile {
+    display: none;
+}
+
+#login-text, #name-text {
+    color: #0071C5; 
+    cursor: pointer;
+}
