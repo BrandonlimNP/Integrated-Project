@@ -1,7 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
-html, body {
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+html,
+body {
   height: 100%;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 /*Nav bar*/
 .nav-active {
@@ -47,7 +48,14 @@ h2 {
 
 .flex-container {
   display: flex;
+  margin: 25px;
   flex-direction: row;
+}
+
+.flex-item {
+  display: flex;
+  flex-direction: row;
+  margin: 15px;
 }
 
 /* STRUCTURE */
