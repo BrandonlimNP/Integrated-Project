@@ -50,12 +50,21 @@ h2 {
   display: flex;
   margin: 25px;
   flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
 .flex-item {
   display: flex;
   margin: 15px;
   flex-direction: column;
+}
+
+.flex-box {
+  display: flex;
+  margin: 0px;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
 .blue {
