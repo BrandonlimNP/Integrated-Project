@@ -112,7 +112,7 @@ h2.active {
 input[type="button"],
 input[type="submit"],
 input[type="reset"] {
-  background-color: #56baed;
+  background-color: #0071c5;
   border: none;
   color: white;
   padding: 15px 80px;
@@ -136,7 +136,7 @@ input[type="reset"] {
 input[type="button"]:hover,
 input[type="submit"]:hover,
 input[type="reset"]:hover {
-  background-color: #39ace7;
+  background-color: #0071c5;
 }
 
 input[type="button"]:active,
@@ -289,7 +289,7 @@ input[type="text"]:placeholder {
   bottom: -10px;
   width: 0;
   height: 2px;
-  background-color: #56baed;
+  background-color: #0071c5;
   content: "";
   transition: width 0.2s;
 }
@@ -307,8 +307,13 @@ input[type="text"]:placeholder {
 *:focus {
   outline: none;
 }
-
-#icon {
-  width: 60%;
-}
 /*button*/
+.btn {
+  border-color: #0071c5;
+  border-radius: 1;
+}
+
+.btn:hover, .btn-check:checked+.btn, .btn-check:active+.btn-outline-primary {
+  background-color: #0071c5;
+  border-color: #0071c5;
+}
