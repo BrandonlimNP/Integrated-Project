@@ -21,7 +21,7 @@ body {
 /*Login modal*/
 
 html {
-  background-color: #56baed;
+  background-color: white;
 }
 
 body {
@@ -30,7 +30,7 @@ body {
 }
 
 a {
-  color: #92badd;
+  color: #0071c5;
   display: inline-block;
   text-decoration: none;
   font-weight: 400;
@@ -115,7 +115,7 @@ h2.inactive {
 
 h2.active {
   color: #0d0d0d;
-  border-bottom: 2px solid #5fbae9;
+  border-bottom: 2px solid #0071c5;
 }
 
 /* FORM TYPOGRAPHY*/
@@ -183,7 +183,7 @@ input[type="text"] {
 
 input[type="text"]:focus {
   background-color: #fff;
-  border-bottom: 2px solid #5fbae9;
+  border-bottom: 2px solid #0071c5;
 }
 
 input[type="text"]:placeholder {
@@ -327,4 +327,18 @@ input[type="text"]:placeholder {
 .btn:hover, .btn-check:checked+.btn, .btn-check:active+.btn-outline-primary {
   background-color: #0071c5;
   border-color: #0071c5;
+}
+.sneaker-cards {
+  margin-top: 24px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.sneaker-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 33.3%;
+  border: 1px solid rgba(136, 136, 136, 0.5);
+  padding: 24px;
 }
