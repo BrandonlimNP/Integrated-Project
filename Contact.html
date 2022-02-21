@@ -144,37 +144,50 @@
     </div>
     <!--SignUpModal-->
     <div class="modal fade" id="modalSignUp" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-  aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content rounded-5 shadow">
-      <div class="modal-header p-5 pb-4 border-bottom-0">
-        <h4 class="modal-title w-100 font-weight-bold">Sign Up</h4>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content rounded-5 shadow">
+            <div class="modal-header p-5 pb-4 border-bottom-0">
+              <h4 class="modal-title w-100 font-weight-bold">Sign Up</h4>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+  
+            <div class="modal-body p-5 pt-0">
+              <form class="">
+                <div class="form-floating mb-3">
+                  <input type="email" class="form-control rounded-4" id="floatingInput" placeholder="name@example.com">
+                  <label for="floatingInput">Email address</label>
+                </div>
+                <div class="form-floating mb-3">
+                  <input type="password" class="form-control rounded-4" id="floatingPassword" placeholder="Password">
+                  <label for="floatingPassword">Password</label>
+                </div>
+                <div class="button-group">
+                  <button class="mb-2 btn btn-lg rounded-4 btn-primary" type="submit">Sign Up</button>
+              
+                  
+                    <a data-bs-toggle="modal" data-bs-target="#modalLogin" id="SideButton">
+                      &nbsp;&nbsp;Login
+                    </a>
+          
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
       </div>
 
-      <div class="modal-body p-5 pt-0">
-        <form class="">
-          <div class="form-floating mb-3">
-            <input type="email" class="form-control rounded-4" id="floatingInput" placeholder="name@example.com">
-            <label for="floatingInput">Email address</label>
-          </div>
-          <div class="form-floating mb-3">
-            <input type="password" class="form-control rounded-4" id="floatingPassword" placeholder="Password">
-            <label for="floatingPassword">Password</label>
-          </div>
-          <div class="button-group">
-          <button class="mb-2 btn btn-lg rounded-4 btn-primary" type="submit">Sign Up</button>
-      
-          
-            <a data-bs-toggle="modal" data-bs-target="#modalLogin" id="SideButton">
-              &nbsp;&nbsp;Login
-            </a>
-    
-          </div>
-        </form>
+      <div class="flex-item">
+        <h1 style="font-size:25;font-family:Segoe UI, Segoe UI">EVO Tech Hotlines:</h1>
+        <p style="font-size: 25px;font-family:Segoe UI, Segoe UI">Xu Yi: +65 8599 3378</p>
+        <p style="font-size: 25px;font-family:Segoe UI, Segoe UI">Brandon: +65 9451 2480</p>
+        <p style="font-size: 25px;font-family:Segoe UI, Segoe UI">Rayn: +65 9812 3621</p>
+        <h1 style="font-size:25;font-family:Segoe UI, Segoe UI">EVO Tech Emails:</h1>
+        <p style="font-size: 25px;font-family:Segoe UI, Segoe UI">Xu Yi: s10222741@connect.np.edu.sg</p>
+        <p style="font-size: 25px;font-family:Segoe UI, Segoe UI">Brandon: s10222109@connect.np.edu.sg</p>
+        <p style="font-size: 25px;font-family:Segoe UI, Segoe UI">Rayn: s10204661@connect.np.edu.sg</p>
       </div>
-    </div>
-  </div>
-</div>
+      
+
   </body>
 </html>
