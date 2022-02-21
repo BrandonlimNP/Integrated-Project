@@ -32,9 +32,155 @@
             <img src="images/Logo.svg" alt="EVO logo" width="60" height="54" />
           </a>
         </div>
+        <button
+          class="navbar-toggler collapsed"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarText"
+          aria-controls="navbarText"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">
+                <span class="nav-active">Home</span></a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="index.html"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Shop
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item" href="monitor.html">Monitor</a>
+                </li>
+                <li><a class="dropdown-item" href="audio.html">Audio</a></li>
+                <li><a class="dropdown-item" href="mouse.html">Mouse</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="game.html">Game</a>
+            </li>
+          </ul>
+          <span class="nav-item">
+            <a class="nav-link nav-bag-mobile-box" href="cart.html">
+              <span class="nav-bag-mobile" style="color: #0071c5"
+                >Shopping Cart&nbsp;&nbsp;</span
+              ><img
+                src="images/ShoppingCart.svg"
+                width="28"
+                height="28"
+                alt="shopping-cart"
+              />
+            </a>
+          </span>
+          <span class="nav-item">
+            <!--Login Toggle-->
+            <a
+              class="nav-link"
+              data-bs-toggle="modal"
+              data-bs-target="#modalLogin"
+              id="login-text"
+              >Login</a
+            >
+            <a
+              class="nav-link"
+              href="profile.html"
+              id="name-text"
+              style="display: none"
+            ></a>
+          </span>
+        </div>
       </div>
     </nav>
+<!--LoginModal-->
+    <div
+      class="modal fade"
+      id="modalLogin"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="myModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content rounded-5 shadow">
+          <div class="modal-header p-5 pb-4 border-bottom-0">
+            <h4 class="modal-title w-100 font-weight-bold">Login</h4>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+    
+          <div class="modal-body p-5 pt-0">
+            <form class="">
+              <div class="form-floating mb-3">
+                <input type="email" class="form-control rounded-4" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput">Email address</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="password" class="form-control rounded-4" id="floatingPassword" placeholder="Password">
+                <label for="floatingPassword">Password</label>
+              </div>
+              <div class="button-group">
+              <button class="mb-2 btn btn-lg rounded-4 btn-primary" type="submit">Login</button>
+          
+              
+                <a data-bs-toggle="modal" data-bs-target="#modalSignUp" id="SideButton">
+                  &nbsp;&nbsp;Sign Up
+                </a>
+        
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--SignUpModal-->
+    <div class="modal fade" id="modalSignUp" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content rounded-5 shadow">
+          <div class="modal-header p-5 pb-4 border-bottom-0">
+            <h4 class="modal-title w-100 font-weight-bold">Sign Up</h4>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+
+          <div class="modal-body p-5 pt-0">
+            <form class="">
+              <div class="form-floating mb-3">
+                <input type="email" class="form-control rounded-4" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput">Email address</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="password" class="form-control rounded-4" id="floatingPassword" placeholder="Password">
+                <label for="floatingPassword">Password</label>
+              </div>
+              <div class="button-group">
+                <button class="mb-2 btn btn-lg rounded-4 btn-primary" type="submit">Sign Up</button>
+            
+                
+                  <a data-bs-toggle="modal" data-bs-target="#modalLogin" id="SideButton">
+                    &nbsp;&nbsp;Login
+                  </a>
+        
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    
+    
 
 
 
