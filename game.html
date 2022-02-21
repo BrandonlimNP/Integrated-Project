@@ -1,182 +1,32 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <!--Meta tags-->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!--Logo-->
-    <link href="images/Logo.png" rel="icon" />
-    <title>EVO Tech</title>
-    <!--Bootstrap CSS-->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-      crossorigin="anonymous"
-    />
-    <!--CSS-->
-    <link href="style.css" rel="stylesheet" />
+    <title>Spin the wheel</title>
+    <link href="game.css" rel="stylesheet" type="text/css" />
   </head>
-
   <body>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-      crossorigin="anonymous"
-    ></script>
-    <!--NavBar-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid">
-        <div class="container">
-          <a class="navbar-brand">
-            <img src="images/Logo.svg" alt="EVO logo" width="60" height="54" />
-          </a>
-        </div>
-        <button
-          class="navbar-toggler collapsed"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarText"
-          aria-controls="navbarText"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html"> Home</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="index.html"
-                id="navbarDropdown"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Shop
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li>
-                  <a class="dropdown-item" href="monitor.html">Monitor</a>
-                </li>
-                <li><a class="dropdown-item" href="audio.html">Audio</a></li>
-                <li><a class="dropdown-item" href="mouse.html">Mouse</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="game.html"
-                ><span class="nav-active">Game</span></a
-              >
-            </li>
-          </ul>
-          <span class="nav-item">
-            <a class="nav-link nav-bag-mobile-box" href="cart.html">
-              <span class="nav-bag-mobile" style="color: #0071c5"
-                >Shopping Cart&nbsp;&nbsp;</span
-              ><img
-                src="images/ShoppingCart.svg"
-                width="28"
-                height="28"
-                alt="shopping-cart"
-              />
-            </a>
-          </span>
-          <span class="nav-item">
-            <!--Login Toggle-->
-            <a
-              class="nav-link"
-              data-bs-toggle="modal"
-              data-bs-target="#modalLogin"
-              id="login-text"
-              >Login</a
-            >
-            <a
-              class="nav-link"
-              href="profile.html"
-              id="name-text"
-              style="display: none"
-            ></a>
-          </span>
-        </div>
-      </div>
-    </nav>
-    <!--LoginModal-->
-    <div
-      class="modal fade"
-      id="modalLogin"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="myModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog" role="document">
-        <div class="modal-content rounded-5 shadow">
-          <div class="modal-header p-5 pb-4 border-bottom-0">
-            <h4 class="modal-title w-100 font-weight-bold">Login</h4>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-    
-          <div class="modal-body p-5 pt-0">
-            <form class="">
-              <div class="form-floating mb-3">
-                <input type="email" class="form-control rounded-4" id="floatingInput" placeholder="name@example.com">
-                <label for="floatingInput">Email address</label>
-              </div>
-              <div class="form-floating mb-3">
-                <input type="password" class="form-control rounded-4" id="floatingPassword" placeholder="Password">
-                <label for="floatingPassword">Password</label>
-              </div>
-              <div class="button-group">
-              <button class="mb-2 btn btn-lg rounded-4 btn-primary" type="submit">Login</button>
-          
-              
-                <a data-bs-toggle="modal" data-bs-target="#modalSignUp" id="SideButton">
-                  &nbsp;&nbsp;Sign Up
-                </a>
-        
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!--SignUpModal-->
-    <div class="modal fade" id="modalSignUp" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-  aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content rounded-5 shadow">
-      <div class="modal-header p-5 pb-4 border-bottom-0">
-        <h4 class="modal-title w-100 font-weight-bold">Sign Up</h4>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
 
-      <div class="modal-body p-5 pt-0">
-        <form class="">
-          <div class="form-floating mb-3">
-            <input type="email" class="form-control rounded-4" id="floatingInput" placeholder="name@example.com">
-            <label for="floatingInput">Email address</label>
-          </div>
-          <div class="form-floating mb-3">
-            <input type="password" class="form-control rounded-4" id="floatingPassword" placeholder="Password">
-            <label for="floatingPassword">Password</label>
-          </div>
-          <div class="button-group">
-          <button class="mb-2 btn btn-lg rounded-4 btn-primary" type="submit">Sign Up</button>
-      
-          
-            <a data-bs-toggle="modal" data-bs-target="#modalLogin" id="SideButton">
-              &nbsp;&nbsp;Login
-            </a>
+    <h1><center> Daily spin the wheel <br></center><br>
     
-          </div>
-        </form>
-      </div>
-    </div>
-  </div>
-</div>
+	<div id="mainbox" class="mainbox">
+		<div id="box" class="box">
+			<div class="box1">
+				<span class="span1"><b>5 coins</b></span>
+				<span class="span2"><b>15 coin</b></span>
+				<span class="span3"><b>10 coins</b></span>
+				<span class="span4"><b>10% discount</b></span>
+			</div>
+			<div class="box2">
+				<span class="span1"><b>5 coins</b></span>
+				<span class="span2"><b>$10 voucher</b></span>
+				<span class="span3"><b>10 coins</b></span>
+				<span class="span4"><b>5 coins</b></span>
+			</div>
+		</div>
+
+		<button class="spin" onclick="SpinWheel()">SPIN</button>
+	</div>
+
+  
+  <script src="script.js"></script>
   </body>
 </html>
