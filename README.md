@@ -10,7 +10,7 @@ This section will briefly explain the features our website has and some features
 <li>Login - Users can sign up for an account or login into their previously made account</li>
 
 <h3>Features left to implement</h3>
-<li>Profile page (work-in-progress) - Shows users information such as the number of points they have, how long their membership is gonna last, wish list, their products to be shipped, etc</li>
+<li>Profile page (work-in-progress) - Shows users information such as the number of points they have, how long their membership is going to last, wish list, their products to be       shipped, etc</li>
 <li>Buy - Users can buy products from our website</li>
 
 # Technologies Used
