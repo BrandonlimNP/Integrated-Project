@@ -334,7 +334,7 @@ input[type="text"]:placeholder {
 h1{
   font-weight: 900;
 }
-/*Cart*/
+/*Cart ref:https://mdbootstrap.com/docs/standard/extended/shopping-carts/*/
 @media (min-width: 1025px) {
   .h-custom {
     height: 100vh !important;
