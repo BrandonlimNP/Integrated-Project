@@ -1,6 +1,10 @@
 # Evo Tech
 This project is about developing an Ecommerce website that sells mainly monitors and pc related accessories.
 
+# Design process
+This website is for tech enthusiasts and users searching for monitors, mouses and headphones. They can shop for the monitors, mouses and headphones they are interested in
+as we have a wide selection of tech products to choose from.
+
 # Features
 This section will briefly explain the features our website has and some features we have yet to implement.
 
