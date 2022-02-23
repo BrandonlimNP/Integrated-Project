@@ -1,6 +1,8 @@
 # Evo Tech
 This project is about developing an Ecommerce website that sells mainly monitors and pc related accessories.
 
+Website link:https://brandonlimnp.github.io/Integrated-Project/
+
 # Design process
 This website is for tech enthusiasts and users searching for monitors, mouses and headphones. They can shop for the monitors, mouses and headphones they are interested in
 as we have a wide selection of tech products to choose from.
